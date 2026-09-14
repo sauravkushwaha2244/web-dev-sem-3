@@ -1,0 +1,21 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-size: 800px;
+    background-position: -1500-500px;
+}
+#form{
+    width:300px;
+    margin:100px;
+    border:3px black solid;
+    border-radius:15px;
+    padding: 25px;
+    background-color: aqua;
+    color: brown;
+    text-align: center;
+    
+}
+#myinput{
+    text-align: center;
+    border-radius:5px;
+    border:2px black solid;
+}

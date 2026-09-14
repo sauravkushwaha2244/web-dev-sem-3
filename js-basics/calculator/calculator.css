@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    background-color: rgb(189, 236, 236);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    height: 100px;
+    background-color: rgb(59, 22, 224);
+    color: cornsilk;
+    width: 140px;
+}
+
+#box2{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    height: 100px;
+    background-color: rgb(12, 155, 7);
+    color: cornsilk;
+    width: 140px;
+}

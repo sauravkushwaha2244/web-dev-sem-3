@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "exp1-event-emitter",
+    "exp2-file-system",
+    "misc"
+  ],
+  "ext": "js,json",
+  "ignore": [
+    "node_modules"
+  ],
+  "exec": "node",
+  "delay": 1000
+}

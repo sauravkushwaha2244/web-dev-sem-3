@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Open Close Window</title>
+  </head>
+  <body>
+    <button onclick="openwindow()">Open Window</button>
+    <button onclick="closewindow()">Close Window</button>
+    <button onclick="moveWindow()">move Window</button>
+
+    <script>
+      let newWindow = null;
+
+      function openwindow() {
+        newWindow = window.open(
+          "about:blank",
+          "_blank",
+          "width=400,height=400,left=100,top=100",
+        );
+
+        newWindow.document.write("<h1>Hello!</h1>");
+      }
+
+      function closewindow() {
+        if (newWindow && !newWindow.closed) {
+          newWindow.close();
+        }
+      }
+      function moveWindow() {
+        newWindow.moveTo(200, 300);
+        newWindow.focus();
+      }
+    </script>
+  </body>
+</html>

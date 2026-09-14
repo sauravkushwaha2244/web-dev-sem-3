@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <h1 id="res">Result</h1>
+
+    <script>
+      let input = prompt("Enter calculation");
+
+      let data = input.split(" ");
+
+      let num1 = Number(data[0]);
+      let op = data[1];
+      let num2 = Number(data[2]);
+
+      let result = document.getElementById("res");
+      let res;
+
+      switch (op) {
+        case "+":
+          res = num1 + num2;
+          break;
+
+        case "-":
+          res = num1 - num2;
+          break;
+
+        case "*":
+          res = num1 * num2;
+          break;
+
+        case "/":
+          res = num1 / num2;
+          break;
+
+        default:
+          res = "Invalid operator";
+      }
+
+      console.log(typeof res);
+
+      result.innerHTML = res;
+    </script>
+  </body>
+</html>

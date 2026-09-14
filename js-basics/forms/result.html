@@ -1,0 +1,32 @@
+let student=prompt("Enter Student's name")
+let roll_no=prompt("Enter Student's Roll Number")
+let n=Number(prompt("Enter no. of Subjects"))
+let marks=new Array
+    for(i=0;i<n;i++){
+    marks.push(Number(prompt("enter the marks")))
+    }
+let total=0
+let grade
+for(let i=0;i<n;i++){
+    total+=marks[i]
+}
+let percentage=(total/5)*100
+if(percentage>90){
+    grade='A'
+}
+else if(percentage<=90 && percentage>80){
+    grade='B'
+}
+else if(percentage<=80 && percentage>70){
+    grade='C'
+}
+else if(percentage<=70 && percentage>60){
+    grade='D'
+}
+else{
+    grade="Fail"
+}
+document.write("Name: "+student+"<br>")
+document.write("Roll_no: "+roll_no+"<br>")
+document.write("Percentage: "+percentage+"<br>")
+document.write("Grade: "+grade+"<br>")
