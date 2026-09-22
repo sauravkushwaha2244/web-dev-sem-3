@@ -19,6 +19,11 @@ body {
   text-align: center;
   font-family: algerian;
 }
+.header h2 {
+  margin: 0;
+  text-align: center;
+  font-family: arial;
+}
 
 .header input {
   width: 25%;
@@ -46,8 +51,25 @@ body {
   
 }
 .content{
-    display:grid;
+    display:flex;
     flex-direction:column;
-    gap:10px;
+ width: 25%;
+    margin :auto;
+  padding: 10px;gap: 10px;
     justify-content:center;
+    background:whitesmoke;
+}
+.btn1,.btn2,.btn3,.btn4,.btn5{
+    width: 25%;
+    margin :auto;
+  padding: 10px;
+  background: green;
+  border: 0;
+  border-radius: 4px;
+}
+
+.selected-option {
+  background-color: lightgreen;
+  color: #d62828;
+  font-weight: bold;
 }

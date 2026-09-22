@@ -1,31 +1,79 @@
+```html
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Question 5</title>
+
+    <link rel="stylesheet" href="assignment.css" />
   </head>
+
   <body>
     <div class="content">
-      <form
-        onsubmit="
-          window.close();
-          return false;
-        "
-      >
-        <h2>Genghis Khan History Quiz</h2>
-
+      <form id="q5Form">
         <div>
-          <h3>5. Which was one of the most retrieve data in database?</h3>
-          <label><input type="radio" name="q5" required /> A. postgres</label
-          ><br />
-          <label><input type="radio" name="q5" /> B. sqlite</label><br />
-          <label><input type="radio" name="q5" /> C. mysql</label><br />
-          <label><input type="radio" name="q5" /> D. supabase</label>
+          <h3>5. Which was one of the most retrieved data in database?</h3>
+
+          <label>
+            <input type="radio" name="q5" value="postgres" required />
+            A. PostgreSQL
+          </label>
+          <br />
+
+          <label>
+            <input type="radio" name="q5" value="sqlite" />
+            B. SQLite
+          </label>
+          <br />
+
+          <label>
+            <input type="radio" name="q5" value="mysql" />
+            C. MySQL
+          </label>
+          <br />
+
+          <label>
+            <input type="radio" name="q5" value="supabase" />
+            D. Supabase
+          </label>
+          <br /><br />
         </div>
 
         <button class="btn5" type="submit">Submit</button>
       </form>
     </div>
+
+    <script>
+      const form = document.getElementById("q5Form");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Quiz submitted successfully!");
+
+        window.close();
+      });
+
+      document.addEventListener("keydown", function (event) {
+        console.log("keydown:", event.key);
+      });
+
+      document.addEventListener("keyup", function (event) {
+        console.log("keyup:", event.key);
+      });
+
+      document
+        .querySelectorAll('input[type="radio"]')
+        .forEach(function (radio) {
+          radio.addEventListener("change", function () {
+            document.querySelectorAll("label").forEach(function (label) {
+              label.classList.remove("selected-option");
+            });
+
+            this.parentNode.classList.add("selected-option");
+          });
+        });
+    </script>
   </body>
 </html>
