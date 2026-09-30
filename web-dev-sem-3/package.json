@@ -1,0 +1,24 @@
+{
+  "name": "web-dev-sem-3",
+  "version": "1.0.0",
+  "description": "Web Development Semester 3 - Lab Experiments",
+  "main": "exp1-event-emitter/eventemitter.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start:exp1": "nodemon exp1-event-emitter/eventemitter.js",
+    "start:exp2-sync": "nodemon exp2-file-system/sync/fs_sync.js",
+    "start:exp2-async": "nodemon exp2-file-system/async/async_fs.js",
+    "start:exp2-promises": "nodemon exp2-file-system/async/promises_then_catch.js"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "web-development",
+    "semester-3"
+  ],
+  "author": "Saurav Kushwaha",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

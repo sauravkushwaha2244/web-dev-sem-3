@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>window</title>
+    <link rel="stylesheet" href="./window.css" />
+  </head>
+  <body>
+    <h1>welcome to the window events page</h1>
+    <div class="box">use me</div>
+  </body>
+  <script>
+    window.addEventListener("load", () => {
+      console.log("Page loaded");
+    });
+
+    window.addEventListener("DOMContentLoaded", () => {
+      console.log("HTML loaded");
+    });
+
+    window.addEventListener("resize", () => {
+      console.log("Window resized");
+    });
+
+    window.addEventListener("scroll", () => {
+      console.log("Page scrolled");
+    });
+  </script>
+</html>

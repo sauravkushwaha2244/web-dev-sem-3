@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=., initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./keyborad.css" />
+  </head>
+  <body>
+    <!-- <div id="form">
+      <h1 id="h1">keyboard event</h1>
+      <p>onkeydown</p>
+      <input class="box" type="text" onkeydown="alert(this.value)" />
+      <input class="box2" type="text" onkeyup="alert(this.value)" />
+      <input class="box 3" type="text" onkeypress="alert(this.value)" />
+    </div> -->
+    <div id="form">
+      <h1 id="h1">keyboard events</h1>
+      <p>onkeydown</p>
+      <input
+        type="text"
+        onkeydown="
+          document.getElementById('form').style.background = this.value
+        "
+      />
+      <p>onkeyup</p>
+      <input
+        type="text"
+        onkeyup="document.getElementById('form').style.background = this.value"
+      />
+      <p>onekeypress</p>
+      <input
+        type="text"
+        onkeypress="
+          document.getElementById('form').style.background = this.value
+        "
+      />
+    </div>
+  </body>
+</html>
